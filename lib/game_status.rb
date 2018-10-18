@@ -21,7 +21,7 @@ def won?(board = ["X", "X", "X", " ", " ", " ", " ", " ", " "])
     combination.each do |cur_index|
       curr_values << board[cur_index]
     end
-    if curr_values.all? { |value| value == "X"} || curr_values.all? {|value| value == "O"}
+    if curr_values.all? {|value| value == "X"} || curr_values.all? {|value| value == "O"}
       return combination
     end
   end
