@@ -55,6 +55,6 @@ end
 
 def winner(board)
   if won?(board) != nil
-    
+    indexs = won?
   end
 end
