@@ -37,9 +37,9 @@ def full? (incomplete_board)
 end
 
 def draw? (board)
-  if won?(board) == nil && full?(board) == true
+  if won?(board) == false && full?(board) == true
     return true
-  elsif won?(board) == nil && full?(board) == FALSE
+  elsif won?(board) == false && full?(board) == FALSE
     return false
   else
     return false
@@ -47,7 +47,7 @@ def draw? (board)
 end
 
 def over? (board)
-  if won?(board) != nil || full?(board) == true || draw?(board) == true
+  if won?(board) != false || full?(board) == true || draw?(board) == true
     return true
   else
     return false
