@@ -25,6 +25,7 @@ def won?(board = ["X", "X", "X", " ", " ", " ", " ", " ", " "])
       return combination
     end
   end
+  return false
 end
 
 def full? (incomplete_board)
